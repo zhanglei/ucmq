@@ -1,0 +1,53 @@
+================================================================
+ UCMQ: A simple http massage queue server.
+ Copyright (c) 2013 UCWeb Inc.
+================================================================
+
+UCMQ is released under the terms of the GNU General Public License version 2 as 
+published by the Free Software Foundation. 
+Public License. See the file `LICENSE' for details.
+
+Installation package description
+
+  README         - This file
+  LICENSE        - License
+  ChangeLog      - History of enhancement
+
+Contents of the directory tree is below.
+
+  ./source       - Sources of UCMQ
+  ./client       - Client of UCMQ(Development of language: c)
+  ./conf         - The configuration file of UCMQ 
+  ./test         - Test tool
+
+Please read the following documents, Then will describes how to install UCMQ.
+
+1. The necessary Installation environment is ready to
+  operating system - Linux/*nix (i686/x86_64/amd64)
+  gcc version      - >= 4.1.2
+  libevent version - >= 2.0.10
+
+2. Building and installation 
+  ./genall.sh
+  ./configure --with-libevent=LIBEVENT_DIR --prefix=PREFIX_DIR
+  make && make install
+
+3. Get usage
+  ./ucmq -h       - help
+  ./ucmq -v       - display version info
+
+4. start UCMQ
+  ./ucmq  -c ../conf/ucmq.ini [ -d ]
+
+5. test
+  ./curl "http://ip:port/?name=test&opt=put&data=hello&ver2"
+
+6. Monitoring status, Please use the browser to access:
+  http://ip:port/stat 
+
+UCMQ was written by ShaneYuan.  You can contact the author
+by e-mail to `osucmq@ucweb.com'.
+
+Thanks.
+
+== END OF FILE ==
