@@ -1,5 +1,5 @@
 ================================================================
- UCMQ: A simple http massage queue server.
+ UCMQ: A simple http message queue server.
  Copyright (c) 2013 UCWeb Inc.
 ================================================================
 
@@ -7,22 +7,19 @@ UCMQ is released under the terms of the GNU General Public License version 2 as
 published by the Free Software Foundation. 
 Public License. See the file `LICENSE' for details.
 
-Installation package description
+Package description
 
   README         - This file
   LICENSE        - License
   ChangeLog      - History of enhancement
-
-Contents of the directory tree is below.
-
-  ./source       - Sources of UCMQ
-  ./client       - Client of UCMQ(Development of language: c)
-  ./conf         - The configuration file of UCMQ 
+  ./source       - Source code of UCMQ
+  ./client       - UCMQ client in C language
+  ./conf         - The configuration file
   ./test         - Test tool
 
-Please read the following documents, Then will describes how to install UCMQ.
+Introduction
 
-1. The necessary Installation environment is ready to
+1. Depends
   operating system - Linux/*nix (i686/x86_64/amd64)
   gcc version      - >= 4.1.2
   libevent version - >= 2.0.10
@@ -32,7 +29,7 @@ Please read the following documents, Then will describes how to install UCMQ.
   ./configure --with-libevent=LIBEVENT_DIR --prefix=PREFIX_DIR
   make && make install
 
-3. Get usage
+3. Usage
   ./ucmq -h       - help
   ./ucmq -v       - display version info
 
@@ -42,10 +39,10 @@ Please read the following documents, Then will describes how to install UCMQ.
 5. test
   ./curl "http://ip:port/?name=test&opt=put&data=hello&ver2"
 
-6. Monitoring status, Please use the browser to access:
+6. Monitor, please access the below address in your web browser
   http://ip:port/stat 
 
-UCMQ was written by ShaneYuan.  You can contact the author
+UCMQ is written by ShaneYuan. Should you have any question, please contact the author
 by e-mail to `osucmq@ucweb.com'.
 
 Thanks.
